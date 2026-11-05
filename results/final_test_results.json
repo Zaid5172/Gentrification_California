@@ -1,0 +1,30 @@
+{
+  "feature_set": "D_core (no census deltas)",
+  "model": "xgb",
+  "drop_below": 100,
+  "cv_auc": 0.5844,
+  "test_auc": 0.6397706122038331,
+  "test_acc": 0.606516290726817,
+  "test_auc_ci": [
+    0.5905067013572058,
+    0.6941241585639493
+  ],
+  "test_acc_ci": [
+    0.556390977443609,
+    0.6541353383458647
+  ],
+  "ablation_diff": 0.024304284797288432,
+  "ablation_se": 0.005406459058632045,
+  "params": {
+    "C": 0.05,
+    "xgb": {
+      "subsample": 0.6,
+      "reg_lambda": 25,
+      "n_estimators": 250,
+      "min_child_weight": 20,
+      "max_depth": 3,
+      "learning_rate": 0.03,
+      "colsample_bytree": 0.4
+    }
+  }
+}
